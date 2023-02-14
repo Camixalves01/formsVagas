@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box ;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'roboto', 'sans-serif';
+}
+
+/* utility classes*/
+.btn-primary {
+    background: #00C2CB;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor:pointer;
+}
+.btn-primary:hover { background:#05868d; }
+
+.logo {
+    height: 60px;
+    width: auto;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    background-color: rgba( 0,0,0,0.6 );
+    color: white;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+#navbar
+.btn-primary:hover { background:#05868d; }
+#navbar .navbar-container {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+#navbar .navbar-container ul {
+    display: flex;
+    list-style: none;
+    font-weight: bold;   
+}
+#navbar .navbar-container ul li {
+    padding: 0 10px;
+    cursor:pointer;
+} 
+#navbar
+.navbar-container ul li:hover { background:#05868d; }
+
+#navbar .navbar-container ul li:nth-child(2) {
+    border-right: 1px solid rgb(255, 255, 255);
+}
+
+/* Showcase */
+#showcase {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    background: url("https://static.vecteezy.com/ti/vetor-gratis/p3/2204194-tecnologia-fundo-design-na-cor-branca-gratis-vetor.jpg") center center/cover;
+    background-color: rgba( 0,0,0,0.10 );
+    background-blend-mode: color;
+
+}
+#showcase .showcase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#showcase .showcase-container h2 {
+    font-size: 5rem;
+}
+#showcase .showcase-container p {
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+
+#footer {
+    background: black;
+    color: white;
+}
+
+#footer .footer-content {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    padding: 80px 0;  
+}
+
+#footer .footer-content .footer-menu {
+    margin: 0 60px;
+    list-style: none;
+}
+
+#footer .footer-content .footer-menu p {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #919496;
+    font-size: 0.8rem;
+}
+
+/* footer Socials*/
+
+.socials {
+    display: flex;
+}
+
+.socials i {
+    margin: 0 20px;
+    font-size: 1.7rem;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <form class="formulario" method="post" action="enviaEmail">
+        <h1 class="title"><i class="icon icon-mail-1"></i> INSCREVER - SE</h1>
+     
+            <label class="label">
+                <span>Nome</span>
+                <input type="text" id="nome" class="campo" required>
+            </label>
+            
+            <label class="label">
+                <span>E-mail</span>
+                <input type="email" id="email" class="campo" required>
+            </label>
+
+            <label class="label">
+                <span>Telefone</span>
+                <input type="number" id="telefone" class="campo" required>
+            </label>
+
+            <label class="label">
+                <span>CEP</span>
+                <input type="number" id="cep" class="campo" required>
+            </label>
+
+            <label class="label">
+                <span>Formação</span>
+                <input type="text" id="formacao" class="campo" required>
+            </label>
+
+            <label class="label">
+                <span>1º Opção de vaga</span>
+                <input type="text" id="primeiravaga" class="campo" required>
+            </label>
+
+            <label class="label">
+                <span>2º Opção de vaga</span>
+                <input type="text" id="segundavaga" class="campo" required>
+            </label>
+
+            <label class="label">
+                <span>Carta de Apresentação</span>
+                <textarea name="mensagem" class="campo" placeholder="Deixe sua mensagem" required=""></textarea>
+            </label>
+
+            <label class="label">
+            <span>Curriculo</span>
+            <input type="file" name="arquivo" id="arquivo" class="campo" required>   
+        </label>
+        
+     </form>
+
+     <input type="hidden" name="acao" value="enviar"> 
+     <button Type="submit" class="botao" onclick="guardafoms()">Enviar</button>
+     <hr>
+     <a href="index.html"><button Type="submit" class="botao" >Voltar</button></a> 
+     <hr>
+     <button id="btn_imp" class="botao">Imprimir</button>
+
+     <div id="imprimir">
+
+        <div id="nome2"></div>
+        <div id="email2"></div>
+        <div id="telefone2"></div>
+        <div id="cep2"></div>
+        <div id="formacao2"></div>
+        <div id="primeiravaga2"></div>
+        <div id="segundavaga2"></div>
+   
+     </div>
+
+
+    </div>
+
+    
+
+    <script src="javascript.js"></script>
+    
+</body>
+</html>
